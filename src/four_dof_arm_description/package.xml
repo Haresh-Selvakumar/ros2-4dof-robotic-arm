@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd"
+            schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<package format="3">
+  <name>four_dof_arm_description</name>
+  <version>0.1.0</version>
+
+  <description>
+    URDF model of a four-degree-of-freedom industrial robotic arm,
+    with joint sliders and RViz visualization in ROS 2.
+  </description>
+
+  <maintainer email="haresh.s2024@vitstudent.ac.in">
+    Haresh Selvakumar
+  </maintainer>
+
+  <license>Apache-2.0</license>
+
+  <!-- Build system -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Launch file dependencies -->
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- Robot visualization and joint movement -->
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <!-- TF tree inspection -->
+  <exec_depend>tf2_tools</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+
+  <!-- Checks used by the existing CMakeLists.txt -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
